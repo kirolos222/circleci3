@@ -69,6 +69,11 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+          name: pip setup before start
+          command: |
+           echo "TODO: Install Pip for usage  "
+           npm run pip:install
+      - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
