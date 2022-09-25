@@ -72,9 +72,9 @@ jobs:
           name: pip setup before start
           command: |
            echo "TODO: Install Pip for usage  "
-            eb init --profile default
-            1
-            2
+            eb create my-environment
+            eb deploy my-environment
+            eb status
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
