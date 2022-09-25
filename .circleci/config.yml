@@ -22,6 +22,7 @@ jobs:
       - run:
           name: pip setup before start
           command: |
+           echo "TODO: Install Pip for usage  "
           curl -O https://bootstrap.pypa.io/get-pip.py
           python3 get-pip.py --user
           pip install awsebcli --upgrade --user
