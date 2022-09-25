@@ -72,7 +72,7 @@ jobs:
           name: pip setup before start
           command: |
            echo "TODO: Install Pip for usage  "
-            eb init Archive --region us-east-1 --platform Node.js
+            eb init udagram-api-dev --region us-east-1 --platform Node.js
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
