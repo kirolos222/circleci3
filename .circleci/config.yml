@@ -72,9 +72,7 @@ jobs:
           name: pip setup before start
           command: |
            echo "TODO: Install Pip for usage  "
-            eb create my-environment
-            eb deploy my-environment
-            eb status
+            eb init --region us-east-1 --platform nd0067-c4-deployment-process-project-starter-master node.js
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
