@@ -23,9 +23,7 @@ jobs:
           name: pip setup before start
           command: |
            echo "TODO: Install Pip for usage  "
-          curl -O https://bootstrap.pypa.io/get-pip.py
-          python3 get-pip.py --user
-          pip install awsebcli --upgrade --user
+          npm run pip:install
       - run:
           name: Install Front-End Dependencies
           command: |
