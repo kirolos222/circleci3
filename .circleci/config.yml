@@ -65,9 +65,14 @@ jobs:
       - node/install:
           node-version: '14.15' 
       - checkout    
-      - eb deploy --profile default
+      - eb/setup
       - aws-cli/setup
       - checkout
+      - run:
+          name: pip setup before start
+          command: |
+           echo "TODO: Install Pip for usage  "
+            eb deploy --profile default
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
