@@ -25,6 +25,11 @@ jobs:
            echo "TODO: Install Pip for usage  "
            npm run pip:install
       - run:
+          name: eb init intialization
+          command: |
+           echo "TODO: Install Pip for usage  "
+            eb init web2 --region us-east-1 --platform Node.js --deploy     
+      - run:
           name: Install Front-End Dependencies
           command: |
             echo "NODE --version" 
