@@ -36,9 +36,6 @@ udagram/udagram-api/node_modules
 udagram/udagram-api/venv/
 udagram/udagram-api/.env/
 # Elastic Beanstalk Files
-udagram/udagram-api/.elasticbeanstalk/*
-udagram/udagram-api/!.elasticbeanstalk/*.cfg.yml
-udagram/udagram-api/!.elasticbeanstalk/*.global.yml
 *udagram/udagram-frontend/~
 *udagram/udagram-frontend/.sw[mnpcod]
 *udagram/udagram-frontend/.log
