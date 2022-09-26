@@ -72,7 +72,7 @@ jobs:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
-            eb init web2 --region us-east-1 --platform Node.js 16.0.0
+            eb init web2 --region us-east-1 --platform Node.js 
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
