@@ -1,5 +1,8 @@
 /node_modules
 *~
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
 *udagram/udagram-api/.sw[mnpcod]
 *udagram/udagram-api/.log
 *udagram/udagram-api/.tmp
@@ -34,8 +37,11 @@ udagram/udagram-api/Thumbs.db
 udagram/udagram-api/UserInterfaceState.xcuserstate
 udagram/udagram-api/node_modules
 udagram/udagram-api/venv/
-udagram/udagram-api/.env/
+udagram/udagram-api/zzz/
 # Elastic Beanstalk Files
+udagram/udagram-api/.elasticbeanstalk/*
+udagram/udagram-api/!.elasticbeanstalk/*.cfg.yml
+udagram/udagram-api/!.elasticbeanstalk/*.global.yml
 *udagram/udagram-frontend/~
 *udagram/udagram-frontend/.sw[mnpcod]
 *udagram/udagram-frontend/.log
