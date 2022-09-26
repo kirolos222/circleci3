@@ -1,14 +1,14 @@
 branch-defaults:
   default:
-    environment: Web2-env
+    environment: Web3-env
   main:
-    environment: Web2-env
+    environment: Web3-env
 environment-defaults:
   Web2-env:
     branch: null
     repository: null
 global:
-  application_name: web2
+  application_name: web3
   default_ec2_keyname: null
   default_platform: Node.js 16
   default_region: us-east-1
