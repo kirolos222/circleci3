@@ -56,27 +56,24 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-      - run:
-          name: frontend start
-          command: |
-            echo "TODO: Build the backend API"
-            npm run frontend:start
-      - run:
-          name: API start
-          command: |
-            echo "TODO: Build the backend API"
-            npm run api:start
+      
       - run:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
             eb init web2 --region us-east-1 --platform Node.js 
       - run:
-          name: Deploy App
+          name: Deploy App front
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
-            npm run deploy            
+            npm run frontend:deploy
+      - run:
+          name: Deploy App api
+          # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps"
+            npm run api:deploy                  
 workflows:
   udagram:
     jobs:
