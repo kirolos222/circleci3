@@ -28,7 +28,7 @@ jobs:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
-            eb init web2 --region us-east-1 --platform Node.js     
+            eb init web3 --region us-east-1 --platform Node.js     
       - run:
           name: Install Front-End Dependencies
           command: |
