@@ -57,12 +57,12 @@ jobs:
             echo "TODO: Build the backend API"
             npm run api:build
       - run:
-          name: frontend start
+          name: frontend start here
           command: |
             echo "TODO: Build the backend API"
             npm run frontend:start
       - run:
-          name: API start
+          name: API start here
           command: |
             echo "TODO: Build the backend API"
             npm run api:start
