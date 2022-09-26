@@ -23,12 +23,7 @@ jobs:
           name: pip setup before start
           command: |
            echo "TODO: Install Pip for usage  "
-           npm run pip:install
-      - run:
-          name: eb init intialization
-          command: |
-           echo "TODO: Install Pip for usage  "
-            eb init web3 --region us-east-1 --platform Node.js     
+           npm run pip:install     
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -42,10 +37,6 @@ jobs:
           name: Install API Dependencies
           command: |
            echo "TODO: Install dependencies in the the backend API  "
-            echo "NODE --version" 
-            echo $(node --version)
-            echo "NPM --version" 
-            echo $(npm --version)
            npm run api:install
       # TODO: Lint the frontend
       - run:
@@ -71,11 +62,11 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run frontend:deploy
-      - run:
-          name: eb init intialization
-          command: |
-           echo "TODO: Install Pip for usage  "
-              npm run api:ebli
+      # - run:
+      #     name: eb init intialization
+      #     command: |
+      #      echo "TODO: Install Pip for usage  "
+      #         npm run api:ebli
       - run:
           name: Deploy App api
           # TODO: Install, build, deploy in both apps
