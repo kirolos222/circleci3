@@ -20,3 +20,4 @@ export const config = {
     secret: process.env.JWT_SECRET,
   },
 };
+console.log(process.env.POSTGRES_USERNAME)
