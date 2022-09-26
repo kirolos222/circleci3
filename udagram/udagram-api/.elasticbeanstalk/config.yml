@@ -1,5 +1,3 @@
-deploy:
-  artifact: ./www/Archive.zip
 branch-defaults:
   default:
     environment: Web2-env
@@ -19,3 +17,5 @@ global:
   profile: eb-cli
   sc: null
   workspace_type: Application
+  deploy:
+  artifact: www/Archive.zip
