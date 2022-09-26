@@ -28,7 +28,7 @@ jobs:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
-            eb init web2 --region us-east-1 --platform Node.js      
+            eb init web2 --region us-east-1 --platform Node.js --deploy     
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -71,6 +71,11 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run frontend:deploy
+        - run:
+          name: eb init intialization
+          command: |
+           echo "TODO: Install Pip for usage  "
+           cd udagram/udagram-api/ && eb init web2 --region us-east-1 --platform Node.js --deploy      
       - run:
           name: Deploy App api
           # TODO: Install, build, deploy in both apps
