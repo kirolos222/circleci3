@@ -9,6 +9,7 @@
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
         "api:install": "cd udagram/udagram-api && npm install",
         "api:build": "cd udagram/udagram-api && npm run build",
+        "api:ebli":"cd udagram/udagram-api/ && eb init web2 --region us-east-1 --platform Node.js --deploy",
         "pip:install":"curl -O https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py --user && pip install awsebcli --upgrade --user",
         "api:start": "cd udagram/udagram-api && npm run dev",
         "api:deploy": "cd udagram/udagram-api && npm run deploy",

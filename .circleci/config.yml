@@ -75,7 +75,7 @@ jobs:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
-           cd udagram/udagram-api/ && eb init web2 --region us-east-1 --platform Node.js --deploy      
+              npm run api:ebli
       - run:
           name: Deploy App api
           # TODO: Install, build, deploy in both apps
