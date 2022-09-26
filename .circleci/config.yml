@@ -69,7 +69,7 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: pip setup before start
+          name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
             eb init web2 --region us-east-1 --platform Node.js 16.0.0

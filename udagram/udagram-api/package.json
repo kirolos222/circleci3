@@ -2,15 +2,15 @@
   "name": "udagram-api",
   "version": "2.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "server.js",
   "scripts": {
     "start": "node .",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && eb list && eb use Web-env && eb deploy",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r web.zip . && cd ..",
+    "deploy": "npm run build && eb list && eb use Web2-env && eb deploy",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r web2.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
