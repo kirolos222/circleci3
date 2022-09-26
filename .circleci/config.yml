@@ -71,7 +71,7 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run frontend:deploy
-        - run:
+      - run:
           name: eb init intialization
           command: |
            echo "TODO: Install Pip for usage  "
