@@ -34,7 +34,7 @@ udagram/udagram-api/Thumbs.db
 udagram/udagram-api/UserInterfaceState.xcuserstate
 udagram/udagram-api/node_modules
 udagram/udagram-api/venv/
-udagram/udagram-api/set_env.sh/
+udagram/udagram-api/.env/
 # Elastic Beanstalk Files
 udagram/udagram-api/.elasticbeanstalk/*
 udagram/udagram-api/!.elasticbeanstalk/*.cfg.yml

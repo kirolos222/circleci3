@@ -13,7 +13,7 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '16.0.0'         
+          node-version: '17.0.1'         
       - checkout
       - eb/setup
       - aws-cli/setup
@@ -56,7 +56,16 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-
+      - run:
+          name: frontend start
+          command: |
+            echo "TODO: Build the backend API"
+            npm run frontend:start
+      - run:
+          name: API start
+          command: |
+            echo "TODO: Build the backend API"
+            npm run api:start
       - run:
           name: eb init intialization
           command: |
